@@ -47,4 +47,4 @@ Bu paragrafta hata tolerans sisteminde sunucu tercihi veya özgün katkıların�
 
 ### Ekip üyeleri
 
-- Video linki (dersin hocası ve asistanı tarafından  erişilebilen)
+- Ekip üyeleri Google-Meet eşliğinde projeyi anlatmalı. Video girişi, üyelerin numara,isim ve teknik ilgi alanları şeklinde kendini tanıtması. Peşinden max. 3 dk kodları koşturma ve log.ların gösterimi. (Video linki, dersin hocası ve asistanı tarafından  erişilebilir olmalıdır.)
