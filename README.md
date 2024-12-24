@@ -1,12 +1,20 @@
 # Dağıtık Abonelik Sistemi (Distributed Subscriber Service)
-Bu dosya üzerinden projede gerçeklediklerinizi izah ediniz.
+
+Bu paragrafta hata tolerans sisteminde sunucu tercihi veya özgün katkılarınızı ifade edebilirsiniz.
 
 
-izah izah izah izah izah izah izah izah izah izah izah izah izah 
-izah izah izah izah izah izah izah izah izah izah izah izah izah 
+### ServerX.java özellikleri
 
+- [ ] admin_client.rb ile başlama
+- [x] hata toleransı 1 prensibiyle çalışma
+- [x] hata toleransı 1 prensibiyle çalışma
+- [ ] ...
+- [ ] ...
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
 
-### plotter.py Solar System Exploration, 1950s – 1960s
+### plotter.py özellikleri
 
 - [ ] Mercury
 - [x] Venus
@@ -18,7 +26,7 @@ izah izah izah izah izah izah izah izah izah izah izah izah izah
 - [ ] Neptune
 - [ ] Comet Haley
 
-### admin.rb Solar System Exploration, 1950s – 1960s
+### admin.rb özellikleri
 
 - [ ] Mercury
 - [x] Venus
@@ -30,14 +38,13 @@ izah izah izah izah izah izah izah izah izah izah izah izah izah
 - [ ] Neptune
 - [ ] Comet Haley
 
-### ServerX.java Solar System Exploration, 1950s – 1960s
+### Ekip üyeleri
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+- Numara, İsim
+- Numara, İsim
+- Numara, İsim
+- Numara, İsim
+
+### Ekip üyeleri
+
+- Video linki (dersin hocası ve asistanı tarafından  erişilebilen)
