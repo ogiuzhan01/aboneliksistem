@@ -1,50 +1,46 @@
 # Dağıtık Abonelik Sistemi (Distributed Subscriber Service)
 
-Bu paragrafta hata tolerans sisteminde sunucu tercihi veya özgün katkılarınızı ifade edebilirsiniz.
+Sistem progamlama proje ödevi
 
 
-### ServerX.java özellikleri
+# Server1.java Özellikleri
++ **Müşteri Verilerini Saklama:** İstemcilerden gelen abone verilerini kendi belleğinde tutar ve yönetir.
++ **Server2 ve Server3 için Yedekleme:** İstemcilerden gelen verilerin bir kopyasını diğer sunuculara aktarır.
++ **Admin İstemci ile İletişim:** Admin.rb istemcisinden gelen başlatma (STRT) komutlarını işler.
++ **Sunucular Arası İletişim:** Diğer sunucularla soketler üzerinden veri alışverişi yapar.
++ **Python Plotter Server ile İletişim:**  Kapasite bilgilerini plotter sunucusuna göndererek grafikte gösterir.
 
-- [ ] admin_client.rb ile başlama
-- [x] hata toleransı 1 prensibiyle çalışma
-- [x] hata toleransı 1 prensibiyle çalışma
-- [ ] ...
-- [ ] ...
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+# Server2.java Özellikleri
++ **Müşteri Verilerini Saklama:** İstemcilerden gelen abone verilerini kendi belleğinde tutar ve yönetir.
++ **Server3 için Yedekleme:** Verilerin bir kopyasını Server3'e gönderir.
++ **Server1'e Veri Gönderimi:** Yedekleme amacıyla verileri Server1'e gönderir.
++ **Admin İstemci ile İletişim:** Admin.rb istemcisinden gelen başlatma (STRT) komutlarını işler.
++ **Sunucular Arası İletişim:** Diğer sunucularla soketler üzerinden veri alışverişi yapar.
++ **Python Plotter Server ile İletişim:** Kapasite bilgilerini plotter sunucusuna gönderir.
 
-### plotter.py özellikleri
+# Server3.java Özellikleri
++ **Müşteri Verilerini Saklama:** İstemcilerden gelen abone verilerini kendi belleğinde tutar ve yönetir.
++ **Server1 ve Server2'ye Veri Gönderimi**: Yedekleme amacıyla verileri diğer sunuculara gönderir.
++ **Admin İstemci ile İletişim:** Admin.rb istemcisinden gelen başlatma (STRT) komutlarını işler.
++ **Sunucular Arası İletişim:** Diğer sunucularla soketler üzerinden veri alışverişi yapar.
++ **Python Plotter Server ile İletişim:** Kapasite bilgilerini plotter sunucusuna gönderir.
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
 
-### admin.rb özellikleri
+# Admin.rb Özellikleri
++ **Sunucuları Başlatma:** dist_subs.conf dosyasından alınan yapılandırma bilgisiyle sunucuları başlatır.
++ **Sunucularla İletişim:** Her sunucuya başlatma (STRT) ve kapasite sorgulama (CPCTY) komutlarını gönderir.
++ **Sunucu Yanıtlarını Yönetme:** Sunuculardan gelen Message ve Capacity nesnelerini işler.
++ **Plotter Server ile Veri Paylaşımı:** Plotter sunucusuna sunucuların kapasite durumlarını gönderir.
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+# Python Plotter Server Özellikleri
++ **Sunucu Kapasitesini Görselleştirme:** Sunuculardan alınan kapasite bilgilerini çubuk grafik olarak anlık olarak görselleştirir.
++ **Sunucu Bilgisi Gösterimi:** Her sunucunun kapasitesini farklı renklerle ayırt eder ve grafikte belirtir.
+
 
 ### Ekip üyeleri
 
-- Numara, İsim
+- 22060695, Mustafa Batur
 - Numara, İsim
 - Numara, İsim
 - Numara, İsim
 
-### Sunum Videosu Linki
-
-- Ekip üyeleri Google-Meet eşliğinde projeyi anlatmalı. Video girişi, üyelerin numara,isim ve teknik ilgi alanları şeklinde kendini tanıtması. Peşinden max. 3 dk kodları koşturma ve log.ların gösterimi. (Video linki, dersin hocası ve asistanı tarafından  erişilebilir olmalıdır.)
